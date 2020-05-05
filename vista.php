@@ -1,7 +1,7 @@
 <!--vista.php-->
 	<?php
 		/**
-		* controlamos que existe la contante CONTROLADOR y si el valor es verdadero
+		* Nueva versión -- controlamos que existe la contante CONTROLADOR y si el valor es verdadero
 		*/
 		if (isset($_SESSION['CONTROLADOR']) && $_SESSION['CONTROLADOR']==true)
 		{	
@@ -14,10 +14,11 @@
 			* @return void 
 			*/
 			function mostrarLibros2($datos){
-				echo "<!DOCTYPE html><html><head><meta charset='utf-8'/>";
-				echo "<link rel='stylesheet' type='text/css' href='estilo.css'>";
+				echo "<!DOCTYPE  html><html><head><meta charset='utf-8'/>";
+				echo "<link    rel='stylesheet' type='text/css' href='estilo.css'>";
 				foreach ($datos as $dato => $valor) {
 					if (is_array($valor)){
+						
 						echo "<table class='tabla'>";
 						foreach ($valor as $libro => $detalle) {
 							foreach ($detalle as $clave=>$valor){
