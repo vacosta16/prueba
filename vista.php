@@ -2,6 +2,7 @@
 	<?php
 		/**
 		* Nueva versión -- controlamos que existe la contante CONTROLADOR y si el valor es verdadero
+		* Versión final
 		*/
 		if (isset($_SESSION['CONTROLADOR']) && $_SESSION['CONTROLADOR']==true)
 		{	
@@ -15,11 +16,11 @@
 			*/
 			function mostrarLibros2($datos){
 				echo "<!DOCTYPE  html><html><head><meta charset='utf-8'/>";
-				echo "<link    rel='stylesheet' type='text/css' href='estilo.css'>";
+				echo "<link rel='stylesheet' type='text/css' href='estilo.css'>";
 				foreach ($datos as $dato => $valor) {
 					if (is_array($valor)){
 						
-						echo "<table class='tabla'>";
+						echo "<table class='filas'>";
 						foreach ($valor as $libro => $detalle) {
 							foreach ($detalle as $clave=>$valor){
 								echo "<tr>";
