@@ -9,11 +9,12 @@
 			* La funcion recibe como parámetro $datos, y no devuelve nada, ya que 
 			* en la propia ejecucion de la funcion se muestra en una tabla los datos de 
 			* los libros contenidos en el parametro de entrada
+			* Cambios importantes en la librería
 			* 
 			* @param array $datos
 			* @return void 
 			*/
-			function mostrarLibros2($datos){
+			function mostrarLibros3($datos){
 				echo "<!DOCTYPE  html><html><head><meta charset='utf-8'/>";
 				echo "<link    rel='stylesheet' type='text/css' href='estilo.css'>";
 				foreach ($datos as $dato => $valor) {
@@ -51,7 +52,7 @@
 			echo "<link rel='stylesheet' type='text/css' href='estilo.css'>";
 			echo "</head><body>";
 			echo "<h2>Acceso no autorizado desde esta página</h2>";
-			echo "<a href='index.php'>pulse este enlace para ir al sitio valido</a>";
+			echo "<a href='index.php'>pulse este enlace para ir al sitio válido</a>";
 			echo "</body></html>";
 			die();
 		}
