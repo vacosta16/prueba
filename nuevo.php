@@ -17,6 +17,7 @@
   */
   function myFunction($myArgument)
   {
+	  //Desarrollando función
   }
 ?>
 </head>
